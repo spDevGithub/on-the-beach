@@ -1,0 +1,49 @@
+.card {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: row;
+}
+
+.cardInfo {
+    padding: 20px;
+}
+
+.hotelImageWrapper {
+    height: 200px;
+    align-self: left;
+}
+
+.hotelImage {
+    height: 100%;
+}
+
+.infoRow {
+    margin-top: 2px;
+    padding: 2px;
+    font-size: 10px;
+    color: #000
+}
+
+.subTitle {
+    margin-top: 5px;
+    font-size: 10px;
+    color: #919191
+}
+
+.title {
+    font-size: 14px;
+    color: #171C64;
+    font-weight: 600;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    height: 15px;
+}

@@ -1,0 +1,7 @@
+.guestsRow {
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    font-size: 10px;
+    color: #000
+}

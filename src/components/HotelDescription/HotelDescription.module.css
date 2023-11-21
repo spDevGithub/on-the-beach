@@ -1,0 +1,15 @@
+.descriptionButton {
+    font-size: 10px;
+    margin-top: -20px;
+    width: 160px;
+    height: 20px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    color: #171C64;
+    text-align: left;
+}
+
+.descriptionText {
+    padding: 20px;
+}

@@ -1,0 +1,21 @@
+.bookButton {
+    margin-top: 10px;
+    padding: 5px;
+    width: 200px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: #FFDE33;
+    border: none;
+    cursor: pointer;
+    color: #171C64;
+}
+
+.buttonLabel {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.buttonPrice {
+    font-weight: 600;
+    font-size: 18px;
+}
