@@ -7,7 +7,7 @@ import { hotelsCopy } from './hotelCopyText/hotelsCopy'
 import { useMapHotels } from './helpers/useMapHotels'
 
 const App = () => {
-  const [sortOrder, setSortOrder] = useState<SortByType>('title')
+  const [sortOrder, setSortOrder] = useState<SortByType>('priceInPence')
 
   const hotels = useMapHotels(hotelsCopy, sortOrder)
 

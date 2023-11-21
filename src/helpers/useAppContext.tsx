@@ -9,7 +9,7 @@ export type ContextType = {
 }
 
 export const defaultContext: ContextType = {
-  sortOrder: 'title',
+  sortOrder: 'priceInPence',
   setSortOrder: null,
 }
 
