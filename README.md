@@ -1,3 +1,30 @@
+# Start here
+
+Thanks for sending over the technical task. I had a lot of fun with this one.
+
+## How does it work?
+
+The app is written in typescript and react using a basic create-react-template with a few extra packages added later to facilitate additional testing
+
+- To begin, run the `npm i` command.
+- Once installation is complete, run `npm start`
+
+## Testing approach
+
+I wrote various unit tests for the application but haven't got complete coverage due to time constraints. You can see the tests in action by running
+
+- `npm test`, for unit tests
+- `npm run test:e2e` for cypress
+- `npm run test:e2e-open` to watch cypress do its thing
+
+## Committing
+
+If you fancy making some changes, feel free! Husky will run prettier against any changes made
+
+- pushing the branch to github will run the test action
+- Feel free to take a look at my commit history to see the development process
+
+
 # On the Beach Frontend Software Engineer code test
 
 Produce a HTML, CSS and JavaScript representation of the given `design.png` with the following features:

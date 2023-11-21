@@ -1,4 +1,4 @@
-import { BookButton } from './BookButton'
+import { BookButton } from './BookButton.component'
 import { convertPenceToString } from '../../helpers/convertPenceToString'
 import { render, screen } from '@testing-library/react'
 

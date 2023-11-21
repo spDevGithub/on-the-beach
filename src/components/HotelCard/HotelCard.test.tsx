@@ -1,16 +1,20 @@
 import { render, screen } from '@testing-library/react'
-import { HotelCard } from './HotelCard'
-import { GuestsRow } from '../GuestsRow/GuestsRow'
-import { BookButton } from '../BookButton/BookButton'
-import { HotelDescription } from '../HotelDescription/HotelDescription'
-import { RenderStars } from '../Stars/RenderStars'
+import { HotelCard } from './HotelCard.component'
 import { HotelImage1 } from '../../assets'
 import { HotelCopy } from '../../hotelCopyText/hotelsCopy'
 
-jest.mock('../GuestsRow/GuestsRow')
-jest.mock('../BookButton/BookButton')
-jest.mock('../HotelDescription/HotelDescription')
-jest.mock('../Stars/RenderStars')
+jest.mock('../GuestsRow/GuestsRow.component', () => ({
+  GuestsRow: () => <div data-testid="GuestsRow"></div>,
+}))
+jest.mock('../BookButton/BookButton.component', () => ({
+  BookButton: () => <div data-testid="BookButton"></div>,
+}))
+jest.mock('../HotelDescription/HotelDescription.component', () => ({
+  HotelDescription: () => <div data-testid="HotelDescription"></div>,
+}))
+jest.mock('../Stars/RenderStars.component', () => ({
+  RenderStars: () => <div data-testid="RenderStars"></div>,
+}))
 
 const mockHotel = {
   title: 'Iberostar Grand Salome',
@@ -46,4 +50,17 @@ describe('HotelCard', () => {
       expect(screen.getByText(string, { exact: false })).toBeInTheDocument()
     },
   )
+
+  const additionalComponents = [
+    'GuestsRow',
+    'BookButton',
+    'HotelDescription',
+    'RenderStars',
+  ]
+
+  it.each(additionalComponents)('should render %s component', component => {
+    render(<HotelCard hotel={mockHotel} />)
+
+    expect(screen.getByTestId(component)).toBeInTheDocument()
+  })
 })

@@ -1,0 +1,22 @@
+.sortButton {
+    width: 180px;
+    height: 40px;
+    background-color: #fff;
+    text-align: left;
+    padding: 5px;
+    line-height: 30px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+}
+
+.sortButton:first-child,
+.sortButton:nth-child(2) {
+    border-bottom: 1px #171C64 solid;
+}
+
+.sortButtonActive {
+    background-color: #171C64;
+    ;
+    color: white
+}

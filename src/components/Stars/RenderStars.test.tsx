@@ -1,5 +1,5 @@
 import { act, render, screen } from '@testing-library/react'
-import { RenderStars } from './RenderStars'
+import { RenderStars } from './RenderStars.component'
 
 describe('RenderStars', () => {
   beforeEach(() => {

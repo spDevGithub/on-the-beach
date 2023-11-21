@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import { GuestsRow } from './GuestsRow'
+import { GuestsRow } from './GuestsRow.component'
 
 describe('GuestsRow', () => {
   it('should include the correct with number of adults', () => {

@@ -1,8 +1,8 @@
 import { HotelCopy } from '../../hotelCopyText/hotelsCopy'
-import { GuestsRow } from '../GuestsRow/GuestsRow'
-import { BookButton } from '../BookButton/BookButton'
-import { HotelDescription } from '../HotelDescription/HotelDescription'
-import { RenderStars } from '../Stars/RenderStars'
+import { GuestsRow } from '../GuestsRow/GuestsRow.component'
+import { BookButton } from '../BookButton/BookButton.component'
+import { HotelDescription } from '../HotelDescription/HotelDescription.component'
+import { RenderStars } from '../Stars/RenderStars.component'
 import styles from './HotelCard.module.css'
 
 export const HotelCard = (props: { hotel: HotelCopy }) => {

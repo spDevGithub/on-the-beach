@@ -1,0 +1,7 @@
+.sortOptionsWrapper {
+    margin-top: 20px;
+    margin-left: auto;
+    display: flex;
+    width: 150px;
+    flex-direction: column;
+}

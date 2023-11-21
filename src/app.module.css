@@ -1,11 +1,14 @@
 .container {
   font-family: sans-serif;
   display: flex;
+  width: 1000px;
   background-image: url('./assets/background.png');
 }
 
 .columnLeft {
+  align-items: center;
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
 }
 

@@ -1,5 +1,5 @@
 import { render, screen, act } from '@testing-library/react'
-import { HotelDescription } from './HotelDescription'
+import { HotelDescription } from './HotelDescription.component'
 
 describe('HotelDescription', () => {
   it('should display "read more about this hotel" when to button has not been clicked', () => {
