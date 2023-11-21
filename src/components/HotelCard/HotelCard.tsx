@@ -1,4 +1,4 @@
-import { HotelCopy } from '../../copy/hotelsCopy'
+import { HotelCopy } from '../../hotelCopyText/hotelsCopy'
 import { GuestsRow } from '../GuestsRow/GuestsRow'
 import { BookButton } from '../BookButton/BookButton'
 import { HotelDescription } from '../HotelDescription/HotelDescription'

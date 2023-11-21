@@ -1,6 +1,6 @@
 import styles from './app.module.css'
 import { HotelCard } from './components/HotelCard/HotelCard'
-import { hotelsCopy } from './copy/hotelsCopy'
+import { hotelsCopy } from './hotelCopyText/hotelsCopy'
 
 const App = () => {
   return (

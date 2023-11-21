@@ -5,7 +5,7 @@ import { BookButton } from '../BookButton/BookButton'
 import { HotelDescription } from '../HotelDescription/HotelDescription'
 import { RenderStars } from '../Stars/RenderStars'
 import { HotelImage1 } from '../../assets'
-import { HotelCopy } from '../../copy/hotelsCopy'
+import { HotelCopy } from '../../hotelCopyText/hotelsCopy'
 
 jest.mock('../GuestsRow/GuestsRow')
 jest.mock('../BookButton/BookButton')

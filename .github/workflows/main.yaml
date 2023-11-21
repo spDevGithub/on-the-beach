@@ -2,15 +2,17 @@ name: Main
 run-name: run tests
 on: [push]
 jobs:
-  Test:
+  Tests:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 Running tests."
+      - run: echo "🎉 Running unit tests."
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: Set up node 
         uses: actions/setup-node@v4
       - name: Install dependencies
         run: npm install
-      - name: Run tests 
+      - name: Run unit tests 
         run: npm test
+      - name: Run e2e tests
+        run: npm run test:e2e
